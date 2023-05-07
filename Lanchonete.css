@@ -1,0 +1,255 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #000000;
+}
+
+#caixa-logo{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 20px 15px 0 100px;
+    width: 230px;
+    height: 230px;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.Img-hamburgueria{
+    width: 390px;
+    height: 240px;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.text-principal{
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.corred{
+    color: orangered;
+}
+
+.principal p{
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.backgroud{
+    background: linear-gradient(white, black);
+}
+
+.main-2{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.text-2{
+    text-align: center;
+    color:black;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.main-2 p{
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 17px;
+}
+
+.mapa-et{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.text-3{
+    text-align: center;
+    color:black;
+    font-size: 2em;
+    margin: 15px;
+}
+
+.conteudo-bn{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-bn{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bn{
+    line-height: 1.5;
+}
+
+.bn:first-child{
+    font-weight: bold;
+}
+
+.bn:before{
+    content: "★";
+}
+
+.img-burguer{
+    width: 60%;
+    opacity: 0.4;
+    transition: 1s;
+    box-shadow: 10px 10px 10px 0  #000000;
+}
+
+.img-burguer:hover{
+    opacity: 1;
+}
+
+footer{
+    background-color: #000000;
+    padding: 30px 0px;
+}
+
+footer img{
+    margin: 20px 15px 0 100px;
+    width: 230px;
+    height: 230px;
+    margin: 2em auto;
+    margin: auto;
+    display: block;
+}
+
+.Copyright{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    max-width: 20px 0 0;
+}
+
+@media (max-width: 480px) {
+    #caixa-logo, .principal,.main-2, .conteudo-bn, .mapa-et{
+        width: auto;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .comments{
+        padding: 10px;
+    }
+
+    .lista-bn, .img-burguer{
+        width: 100%;
+    }
+
+    .principal p{
+        margin: 0 5px auto;
+    }
+
+    .mapa-et{
+        margin: 0 auto;
+    }
+
+    .lista-bn{
+        margin: 10px;
+    }
+}
+
+/*Página Contato*/
+
+form{
+    margin: 40px 0;
+}
+
+.tag{
+    padding: 0 0 0 5px;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.input-preenchimento{
+    display: block;
+    margin: 20px;
+    padding: 5px 20px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.input-preenchimento:hover{
+    color: #000000;
+}
+
+.divprimaria{
+    padding: 10px 0 0 7%;
+}
+
+.divprimaria2{
+    padding: 10px 0 0 7%;
+}
+
+.aviso{
+    position: absolute;
+    font-size: 12px;
+    padding-top: 0px;
+}
+
+.comentarios{
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 10px 0  3px;
+    border-radius: 5px;
+    width: 30%;
+    height: 150px;
+}
+
+
