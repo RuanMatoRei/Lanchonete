@@ -80,7 +80,7 @@ nav a:hover{
     font-style: italic;
 }
 
-.backgroud{
+.mapa{
     background: linear-gradient(white, black);
 }
 
@@ -180,6 +180,22 @@ footer img{
         text-align: center;
     }
 
+    .Img-hamburgueria{
+        width: 100%;
+    }
+
+    .text-principal{
+        padding: 1em;
+    }
+
+    .text-quemsomos{
+        padding: 0.5em;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+
     .comments{
         padding: 10px;
     }
@@ -203,53 +219,89 @@ footer img{
 
 /*Página Contato*/
 
-form{
-    margin: 40px 0;
+.section_preenchimento{
+    margin: 2em;
 }
 
-.tag{
-    padding: 0 0 0 5px;
+.preenchimento{
+    margin-bottom: 2em;
+    position: relative;
 }
 
-form label{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 15px;
-}
-
-.input-preenchimento{
-    display: block;
-    margin: 20px;
-    padding: 5px 20px;
+.form_preenchimento input{
     width: 30%;
+    height: 25px;
+    font-size: 15px;
+    outline: none;
     border-radius: 5px;
+    border: 1px solid #000000;
 }
 
-.input-preenchimento:hover{
-    color: #000000;
+.form_preenchimento textarea{
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    resize: none;
 }
 
-.divprimaria{
-    padding: 10px 0 0 7%;
-}
-
-.divprimaria2{
-    padding: 10px 0 0 7%;
-}
-
-.aviso{
+.form_preenchimento span{
     position: absolute;
-    font-size: 12px;
-    padding-top: 0px;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: .5;
 }
 
-.comentarios{
-    display: block;
-    margin: 0 0 0 10px;
-    padding: 10px 0  3px;
-    border-radius: 5px;
+.form_preenchimento input:focus ~ span,
+.form_preenchimento textarea:focus ~ span,
+.form_preenchimento input:valid ~ span,
+.form_preenchimento textarea:valid ~ span
+{
+    transform: translateY(-25px);
+    font-size: 17px;
+    opacity: 1;
+}
+
+.form_preenchimento button{
+    color: aliceblue;
     width: 30%;
-    height: 150px;
+    height: 30px;
+    background-color: #0670b8;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.5s; 
+    cursor: pointer;
 }
 
+.form_preenchimento button:hover{
+    background-color: #022d49;
+}
 
+.form_preenchimento button:active{
+    background-color: #01010c;
+}
+
+.preenchimento p{
+    font-size: 15px;
+    padding: 0.5em;
+}
+
+@media (max-width: 480px) {
+    .section_preenchimento{
+        width: auto;
+    }
+
+    .form_preenchimento input{
+        width: 100%;
+    }
+
+    .form_preenchimento textarea{
+        width: 100%;
+    }
+
+    .form_preenchimento button{
+        width: 100%;
+    }
+}
