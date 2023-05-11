@@ -289,18 +289,25 @@ footer img{
 }
 
 .text-fav{
-    padding-right: 50px;
+    position: relative;
+    text-align: right;
+    font-size: 25px;
+    top: -410px;
+    text-align: center;
+    
 }
 
 .lanche_favorito{
     position: relative;
     border: 5px solid #000000;
-    max-width: 600px;
-    top: 50px;
+    max-width: 550px;
+    top: -400px;
     float: right;
     margin-right: 50px;
     
 }
+
+
 
 @media (max-width: 480px) {
     .section_preenchimento{
